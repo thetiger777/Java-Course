@@ -1,24 +1,14 @@
 package com.sirma.itt.javacourse.intro;
 
-import org.junit.Ignore;
-import org.junit.Test;
-import org.junit.runner.RunWith;
-import org.junit.runners.JUnit4;
+import static org.junit.Assert.fail;
 
-/**
- * Tests for {@link Foo}.
- * 
- * @author user@example.com (John Doe)
- */
-@RunWith(JUnit4.class)
+import org.junit.Test;
+
 public class ArrayTest {
 
 	@Test
-	public void thisAlwaysPasses() {
+	public void test() {
+		fail("Not yet implemented");
 	}
 
-	@Test
-	@Ignore
-	public void thisIsIgnored() {
-	}
 }
