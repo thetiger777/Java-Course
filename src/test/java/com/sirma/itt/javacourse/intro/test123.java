@@ -23,14 +23,13 @@ public class test123 {
 	}
 
 	@Parameters
-	public static Collection<Object[]> data() {
+	public static Collection<Object[]> data(test123 Array) {
 		Object[][] data = new Object[][] { { 1 }, { 2 }, { 3 }, { 4 } };
 		return Arrays.asList(data);
 	}
 
 	@Test
-	public void pushTest() {
+	public void pushTest(test123 Array) {
 		System.out.println("Parameterized Number is : " + number);
 	}
-
 }
