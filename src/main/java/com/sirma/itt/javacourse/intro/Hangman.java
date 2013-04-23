@@ -11,31 +11,6 @@ public class Hangman {
 	 */
 	public static void Hang(char trying, String correct) {
 
-		String temp = "";
-		String corrlett = "";
-		/*
-		 * if (correct.equals(trying)) { System.out.println("Vqrno!"); } else {
-		 * System.out.println("Ne e vqrno!"); }
-		 */
-		// loop for the mistakes
-		// attempts
-		int att = 6;
-		for (int j = 0; j < correct.length(); j++) {
-			if (trying == correct.charAt(j)) {
-				// System.out.println("Correct letter! ");
-				corrlett += trying;
-			}
-		}
-		System.out.println("Contained : " + corrlett);
-		for (int j = 0; j < correct.length(); j++) {
-			int k = 0;
-			if (trying != correct.charAt(j)) {
-				k++;
-			}
-			if (k == correct.length()) {
-				att--;
-			}
-		}
 	}
 
 	public static void main(String[] args) {
