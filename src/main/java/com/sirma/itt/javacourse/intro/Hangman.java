@@ -9,9 +9,6 @@ public class Hangman {
 	/**
 	 * @param args
 	 */
-	public static void Hang(char trying, String correct) {
-
-	}
 
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
@@ -31,7 +28,8 @@ public class Hangman {
 		}
 
 		System.out.println("You have to guess a word with " + correct.length()
-				+ " letters.");
+				+ " letters. You have " + (correct.length() + 4)
+				+ " tries. You can make 6 mistakes.");
 		System.out.println(temp);
 		for (int i = 0; i < (correct.length() + 4); i++) {
 			int k = 0;
