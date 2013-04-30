@@ -5,7 +5,7 @@ public class Number_Strings {
 	/**
 	 * @param args
 	 */
-	public static void plus(String number1, String number2) {
+	public static int[] plus(String number1, String number2) {
 
 		int a = number1.length(); // Does not include the 0 element (for array)
 		int b = number2.length();
@@ -65,14 +65,6 @@ public class Number_Strings {
 		for (int i = 0; i < k; i++) {
 			System.out.print(answ[i] + " ");
 		}
-
-	}
-
-	public static void main(String[] args) {
-		// TODO Auto-generated method stub
-		String number1 = "115555222112553";
-		String number2 = "35213513521";
-		plus(number1, number2);
-
+		return answ;
 	}
 }
