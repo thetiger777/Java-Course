@@ -13,7 +13,7 @@ public class Divisor {
 		return fNum;
 	}
 
-	public static int littleDivisor3(int fNum, int sNum, int tNum) { // NOK
+	public static int littleDivisor(int fNum, int sNum, int tNum) { // NOK
 		int NOK = (fNum * sNum) / tNum;
 		return NOK;
 	}
@@ -23,12 +23,12 @@ public class Divisor {
 	 */
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
-		int numberOne = 777;
-		int numberTwo = 77;
+		int numberOne = 77;
+		int numberTwo = 7;
 		int NOD;
 		NOD = biggestDivisor(numberOne, numberTwo);
 		System.out.println("NOD: " + NOD);
-		System.out.println("NOK: " + littleDivisor3(numberOne, numberTwo, NOD));
+		System.out.println("NOK: " + littleDivisor(numberOne, numberTwo, NOD));
 	}
 
 }

@@ -34,7 +34,7 @@ public class ArraySort {
 			quickSort(arr, index, right);
 	}
 
-	public static void display(int[] arr) {
+	public static void sort(int[] arr) {
 		System.out.println("Original array:");
 		int i = 0;
 		int k = 0;
@@ -54,7 +54,7 @@ public class ArraySort {
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
 		int[] array = { 1, 2, 3, 4, 23, 5, 6, 7, 8, 9, 8, 7, 6, 5, 22 };
-		display(array);
+		sort(array);
 
 	}
 }

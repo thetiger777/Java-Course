@@ -5,7 +5,7 @@ public class StringGen {
 	/**
 	 * @param args
 	 */
-	public static void MathTest(int length) {
+	public static String randomString(int length) {
 
 		String possible = "QWERTYUIOPASDFGHJKLZXCVBNMqwertyuiopasdfghjklzxcvbnm1234567890";
 		String text = "";
@@ -19,11 +19,12 @@ public class StringGen {
 				+ possible.length());
 		System.out.println("Randomly generated string: " + text);
 		System.out.println("Length of the random string: " + length);
+		return text;
 	}
 
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
-		MathTest(55);
+		randomString(55);
 	}
 
 }
