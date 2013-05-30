@@ -2,17 +2,35 @@ package com.sirma.itt.javacourse.objects;
 
 public class Sumator {
 
-	public static int sum(int numInt, int numInt2) {
-		return numInt + numInt2;
+	static class IntSumator extends Sumator {
+
+		public static int sum(int a, int b) {
+			return a + b;
+		}
+
 	}
 
-	public static double sum(double numFloat, double numFloat2) {
-		return numFloat + numFloat2;
+	static class FlPointSumator extends Sumator {
+
+		public static double sum(double a, double b) {
+			return a + b;
+		}
+
 	}
 
-	public static String sum(String str1, String str2) {
-		String s = str1 + str2;
-		return s;
+	static class StringSumator extends Sumator {
+
+		public String sum(String a, String b) {
+			String s = a + b;
+			return s;
+		}
+	}
+
+	static class BigIntSumator extends Sumator {
+
+		// public BigInteger sum(BigInteger bigInt1, BigInteger bigInt2) {
+		// return bigInt1 + bigInt2;
+		// }
 	}
 
 	/**
@@ -20,10 +38,11 @@ public class Sumator {
 	 */
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
-		System.out.println("Strings: " + sum("2", "5"));
-		System.out.println("Integers: " + sum(2, 5));
-		System.out.println("Floats: " + sum(2.01, 3.44));
-
+		StringSumator a = new StringSumator();
+		a.sum(null, null); // AVOID
+		System.out.println("Strings: " + StringSumator.sum("2", "5"));
+		System.out.println("Integers: " + IntSumator.sum(2, 5));
+		System.out.println("Floats: " + FlPointSumator.sum(2.01, 3.44));
+		// BigInteger("asd", 10);
 	}
-
 }
