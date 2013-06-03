@@ -1,8 +1,21 @@
-package com.sirma.itt.javacourse.intro; // com.sirma.itt.javacourse.intro ??
+package com.sirma.itt.javacourse.intro;
 
+/**
+ * Finds the greatest common divisor and the least common multiple for 2
+ * numbers.
+ * 
+ * @author Vasko
+ */
 public class Divisor {
 
-	public static int biggestDivisor(int fNum, int sNum) { // NOD
+	/**
+	 * @param fNum
+	 *            - the first number given.
+	 * @param sNum
+	 *            - the second number given.
+	 * @return
+	 */
+	public static int biggestDivisor(int fNum, int sNum) {
 		while (fNum != sNum) {
 			if (fNum > sNum) {
 				fNum = fNum - sNum;
@@ -13,22 +26,14 @@ public class Divisor {
 		return fNum;
 	}
 
-	public static int littleDivisor(int fNum, int sNum, int tNum) { // NOK
-		int NOK = (fNum * sNum) / tNum;
+	/**
+	 * @param NOD
+	 *            - the biggest common divisor
+	 * @param NOK
+	 *            - the littlest common multiple
+	 */
+	public static int littleDivisor(int fNum, int sNum, int NOD) {
+		int NOK = (fNum * sNum) / NOD;
 		return NOK;
 	}
-
-	/**
-	 * @param args
-	 */
-	public static void main(String[] args) {
-		// TODO Auto-generated method stub
-		int numberOne = 77;
-		int numberTwo = 7;
-		int NOD;
-		NOD = biggestDivisor(numberOne, numberTwo);
-		System.out.println("NOD: " + NOD);
-		System.out.println("NOK: " + littleDivisor(numberOne, numberTwo, NOD));
-	}
-
 }
