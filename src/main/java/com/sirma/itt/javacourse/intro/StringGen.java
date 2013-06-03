@@ -10,8 +10,6 @@ public class StringGen {
 	 */
 	public static String randomizing(int length, String possible) {
 
-		String possible1 = null;
-
 		String text = "";
 
 		for (int i = 0; i < length; i++) {
