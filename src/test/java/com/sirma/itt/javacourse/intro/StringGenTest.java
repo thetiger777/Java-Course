@@ -15,7 +15,7 @@ public class StringGenTest {
 		String test;
 		length = 25;
 		StringGen tester = new StringGen();
-		test = tester.randomString(length);
+		test = tester.randomizing(length);
 		for (int i = 0; i < test.length(); i++) {
 			check = false;
 			index = possible.indexOf(test.charAt(i));
