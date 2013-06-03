@@ -13,8 +13,5 @@ public class ReverseArr {
 			arr[j] = arr[i - (j + 1)];
 			arr[i - (j + 1)] = buf;
 		}
-		for (int k = 0; k < i; k++) {
-			System.out.print(" " + arr[k]);
-		}
 	}
 }
