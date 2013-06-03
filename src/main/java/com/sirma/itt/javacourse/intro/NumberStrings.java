@@ -74,13 +74,21 @@ public class NumberStrings {
 				}
 			}
 		}
-		for (int i = 0; i < answ.length; i++) {
-			ans += answ[i];
+
+		if (answ[0] == 0) {
+			for (int i = 0; i < answ.length - 1; i++) {
+				ans += answ[i + 1];
+			}
+		} else {
+			for (int i = 0; i < answ.length; i++) {
+				ans += answ[i];
+			}
 		}
+
 		return ans;
 	}
 
 	public static void main(String[] args) {
-		System.out.println(plus("479", "999"));
+		System.out.println(plus("1", "1"));
 	}
 }
