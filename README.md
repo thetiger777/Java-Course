@@ -1,4 +1,4 @@
-First-try
+Java-Course
 =========
 
-My first try on github.
+The Java tutorial course at Sirma ITT.
