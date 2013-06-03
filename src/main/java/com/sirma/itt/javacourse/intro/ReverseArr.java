@@ -3,6 +3,8 @@ package com.sirma.itt.javacourse.intro;
 public class ReverseArr {
 
 	/**
+	 * Reverses an array without using another array.
+	 * 
 	 * @param args
 	 */
 	public static void reverse(int[] arr) {
