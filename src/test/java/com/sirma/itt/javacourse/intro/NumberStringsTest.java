@@ -10,12 +10,11 @@ public class NumberStringsTest {
 	public void testPlus() {
 		int i;
 		String ans;
-		String expected = "0115590435626074";
+		String expected = "115590435626074";
 		NumberStrings tester = new NumberStrings();
 		String number1 = "115555222112553";
 		String number2 = "35213513521";
 		ans = tester.plus(number1, number2);
 		Assert.assertEquals(expected, ans);
 	}
-
 }
