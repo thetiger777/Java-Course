@@ -10,10 +10,12 @@ package com.sirma.itt.javacourse.intro;
 
 public class Array {
 
-	/**
-	 * Gets the minimum element of the given array and returns it.
-	 */
+	/** Gets the minimum element of the given array and returns it. */
 	public int getMinElement(int[] array) {
+		/*
+		 * As there is no higher value integer, the 'if' will always work at
+		 * least once.
+		 */
 		int minElem = Integer.MAX_VALUE;
 		for (int i = 0; i < array.length; i++) {
 			if (minElem > array[i]) {
