@@ -1,5 +1,10 @@
 package com.sirma.itt.javacourse.intro;
 
+/**
+ * Implements the QuickSort method for a given array.
+ * 
+ * @author Vasko
+ */
 public class ArraySort {
 
 	/**
@@ -48,13 +53,6 @@ public class ArraySort {
 		for (i = 0; i < arr.length; i++) {
 			System.out.printf(" " + arr[i]);
 		}
-
-	}
-
-	public static void main(String[] args) {
-		// TODO Auto-generated method stub
-		int[] array = { 1, 2, 3, 4, 23, 5, 6, 7, 8, 9, 8, 7, 6, 5, 22 };
-		sort(array);
 
 	}
 }
