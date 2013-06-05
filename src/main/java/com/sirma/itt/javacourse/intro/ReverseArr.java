@@ -7,7 +7,7 @@ public class ReverseArr {
 	 * 
 	 * @param args
 	 */
-	public static void reverse(int[] arr) {
+	public void reverse(int[] arr) {
 		int i = arr.length;
 		int buf = 0;
 		for (int j = 0; j < i / 2; j++) {
