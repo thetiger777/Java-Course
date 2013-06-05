@@ -66,6 +66,13 @@ public class Hangman {
 		}
 	}
 
+	/**
+	 * As automated testing is impossible, testing is done by using the 'main'
+	 * function.
+	 * 
+	 * @param args
+	 */
+
 	public static void main(String[] args) {
 		String correct;
 		InputStream in = System.in;
