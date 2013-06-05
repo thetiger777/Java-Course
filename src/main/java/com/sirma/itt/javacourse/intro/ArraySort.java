@@ -10,7 +10,7 @@ public class ArraySort {
 	/**
 	 * @param args
 	 */
-	public static int partition(int[] arr, int left, int right) {
+	public int partition(int[] arr, int left, int right) {
 		int i = left, j = right;
 		int tmp;
 		int pivot = arr[(left + right) / 2];
@@ -31,7 +31,7 @@ public class ArraySort {
 		return i;
 	}
 
-	public static void quickSort(int[] arr, int left, int right) {
+	public void quickSort(int[] arr, int left, int right) {
 		int index = partition(arr, left, right);
 		if (left < index - 1)
 			quickSort(arr, left, index - 1);
@@ -39,7 +39,7 @@ public class ArraySort {
 			quickSort(arr, index, right);
 	}
 
-	public static void sort(int[] arr) {
+	public void sort(int[] arr) {
 		System.out.println("Original array:");
 		int i = 0;
 		int k = 0;
