@@ -7,7 +7,7 @@ public class NumberStrings {
 	 * 
 	 * @param args
 	 */
-	public static String plus(String number1, String number2) {
+	public String plus(String number1, String number2) {
 
 		int[] num1 = new int[number1.length()];
 		int[] num2 = new int[number2.length()];
@@ -86,9 +86,5 @@ public class NumberStrings {
 		}
 
 		return ans;
-	}
-
-	public static void main(String[] args) {
-		System.out.println(plus("1", "1"));
 	}
 }
