@@ -39,8 +39,7 @@ public class Sumator {
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
 		StringSumator a = new StringSumator();
-		a.sum(null, null); // AVOID
-		System.out.println("Strings: " + StringSumator.sum("2", "5"));
+		System.out.println("Strings: " + a.sum("2", "5"));
 		System.out.println("Integers: " + IntSumator.sum(2, 5));
 		System.out.println("Floats: " + FlPointSumator.sum(2.01, 3.44));
 		// BigInteger("asd", 10);
