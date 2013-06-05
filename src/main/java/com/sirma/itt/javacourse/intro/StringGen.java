@@ -8,7 +8,7 @@ public class StringGen {
 	 * 
 	 * @param args
 	 */
-	public static String randomizing(int length, String possible) {
+	public String randomizing(int length, String possible) {
 
 		String text = "";
 
@@ -17,12 +17,5 @@ public class StringGen {
 					* possible.length()));
 		}
 		return text;
-	}
-
-	public static void main(String[] args) {
-		// TODO Auto-generated method stub
-		System.out
-				.println(randomizing(55,
-						"QWERTYUIOPASDFGHJKLZXCVBNMqwertyuiopasdfghjklzxcvbnm1234567890"));
 	}
 }
