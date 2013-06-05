@@ -4,7 +4,6 @@ import org.junit.Assert;
 import org.junit.Test;
 
 public class ArrayTest {
-
 	@Test
 	public void testGetMinElement() {
 		int minEl = 0;
@@ -30,3 +29,17 @@ public class ArrayTest {
 		tester.printArray(array);
 	}
 }
+/*
+ * @RunWith(Parameterized.class) public class ArrayTest { private final int
+ * testArray[]; private int expectedValidation[]; private Array tArray; public
+ * ArrayTest(Array myTestArray) { this.testArray = myTestArray; }
+ * @Before public void initialize() { tArray = new Array(); } public
+ * ArrayTest(Array myTestArray, Array expectedValidation) { this.testArray =
+ * myTestArray; this.expectedValidation = expectedValidation; }
+ * @Parameterized.Parameters public static Collection testArrays() { return
+ * Arrays.asList(new Object[][] { { { 1, 3, 2 }, { 1, 2, 3 } }, { { 1, 3, 2 }, {
+ * 1, 2, 3 } } }); }
+ * @Test public void testArray() { assertEquals(expectedValidation,
+ * testArray.getSum(testArray)); } }
+ */
+
