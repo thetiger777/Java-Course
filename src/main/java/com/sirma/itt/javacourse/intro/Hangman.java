@@ -17,7 +17,6 @@ public class Hangman {
 	 */
 
 	public static void hanging(String correct) {
-		// TODO Auto-generated method stub
 		int wronglet = 0;
 		InputStream in = System.in;
 		BufferedReader br = new BufferedReader(new InputStreamReader(in));

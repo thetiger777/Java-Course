@@ -1,17 +1,27 @@
 package com.sirma.itt.javacourse.intro;
 
+/**
+ * Sums two numbers, they are given as strings.
+ * 
+ * @author Vasko
+ */
 public class NumberStrings {
 
 	/**
-	 * Sums two numbers, given as strings.
+	 * Sums two numbers, given as strings, by taking them apart character by
+	 * character.
 	 * 
-	 * @param args
+	 * @param number1
+	 *            is the first string for the summing
+	 * @param number2
+	 *            is the second string for the summing
+	 * @return answer is the value of the two summed strings.
 	 */
 	public String plus(String number1, String number2) {
 
 		int[] num1 = new int[number1.length()];
 		int[] num2 = new int[number2.length()];
-		String ans = "";
+		String answer = "";
 		int bigLength = 0;
 		int littleLength = 0;
 		int diffLength = 0;
@@ -31,18 +41,12 @@ public class NumberStrings {
 		for (int i = 0; i < number1.length(); i++) {
 			buf = number1.charAt(i);
 			num1[i] = Character.getNumericValue(buf);
-			System.out.print(num1[i]);
-			System.out.print(" ");
 		}
-		System.out.println();
 
 		for (int i = 0; i < number2.length(); i++) {
 			buf = number2.charAt(i);
 			num2[i] = Character.getNumericValue(buf);
-			System.out.print(num2[i]);
-			System.out.print(" ");
 		}
-		System.out.println();
 
 		for (int i = 0; i < littleLength; i++) {
 			answ[bigLength - i] += num1[number1.length() - 1 - i]
@@ -77,14 +81,14 @@ public class NumberStrings {
 
 		if (answ[0] == 0) {
 			for (int i = 0; i < answ.length - 1; i++) {
-				ans += answ[i + 1];
+				answer += answ[i + 1];
 			}
 		} else {
 			for (int i = 0; i < answ.length; i++) {
-				ans += answ[i];
+				answer += answ[i];
 			}
 		}
 
-		return ans;
+		return answer;
 	}
 }
