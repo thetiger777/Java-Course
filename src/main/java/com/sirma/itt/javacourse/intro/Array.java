@@ -10,7 +10,13 @@ package com.sirma.itt.javacourse.intro;
 
 public class Array {
 
-	/** Gets the minimum element of the given array and returns it. */
+	/**
+	 * Gets the minimum element of the given array and returns it.
+	 * 
+	 * @param array
+	 *            is the given array that is being used.
+	 * @return minElem is the returned value of the minimum element of the array
+	 */
 	public int getMinElement(int[] array) {
 		/*
 		 * As there is no higher value integer, the 'if' will always work at
@@ -27,6 +33,10 @@ public class Array {
 
 	/**
 	 * Sums all the elements of the given array and returns the sum.
+	 * 
+	 * @param array
+	 *            is the given array that is being used.
+	 * @return sum - it returns the sum of the elements of the array as integer
 	 */
 	public int getSum(int[] array) {
 		int sum = 0;
@@ -38,14 +48,16 @@ public class Array {
 
 	/**
 	 * Prints all the elements of the given array.
+	 * 
+	 * @param array
+	 *            is the given array that is being used.
 	 */
 	public void printArray(int[] array) {
 		System.out.println("The elements of the array:");
-		System.out.printf("[ " + array[1]);
+		System.out.printf("[ " + array[0]);
 		for (int i = 1; i < array.length; i++) {
 			System.out.printf(", " + array[i]);
 		}
 		System.out.printf(" ]");
-
 	}
 }
