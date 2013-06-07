@@ -7,33 +7,36 @@ package com.sirma.itt.javacourse.intro;
  * @author Vasko
  */
 public class Divisor {
-
 	/**
-	 * @param fNum
+	 * @param firstNum
 	 *            - the first number given.
-	 * @param sNum
+	 * @param secondNum
 	 *            - the second number given.
-	 * @return
+	 * @return secondNum becomes the biggest common divisor after all the
+	 *         actions
 	 */
-	public static int biggestDivisor(int fNum, int sNum) {
-		while (fNum != sNum) {
-			if (fNum > sNum) {
-				fNum = fNum - sNum;
+	public static int biggestDivisor(int firstNum, int secondNum) {
+		while (firstNum != secondNum) {
+			if (firstNum > secondNum) {
+				firstNum = firstNum - secondNum;
 			} else {
-				sNum = sNum - fNum;
+				secondNum = secondNum - firstNum;
 			}
 		}
-		return fNum;
+		return secondNum;
 	}
 
 	/**
-	 * @param NOD
+	 * @param bigComDiv
 	 *            - the biggest common divisor
-	 * @param NOK
-	 *            - the littlest common multiple
+	 * @param firstNum
+	 *            - the first number given.
+	 * @param secondNum
+	 *            - the second number given.
+	 * @return litComMulti this is the littlest common multiplier
 	 */
-	public static int littleDivisor(int fNum, int sNum, int NOD) {
-		int NOK = (fNum * sNum) / NOD;
-		return NOK;
+	public static int littleDivisor(int firstNum, int secondNum, int bigComDiv) {
+		int litComMulti = (firstNum * secondNum) / bigComDiv;
+		return litComMulti;
 	}
 }

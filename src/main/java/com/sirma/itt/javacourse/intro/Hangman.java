@@ -12,7 +12,8 @@ import java.io.InputStreamReader;
 public class Hangman {
 
 	/**
-	 * @param args
+	 * @param correct
+	 *            the right word that is inserted by the user.
 	 */
 
 	public static void hanging(String correct) {
@@ -54,12 +55,12 @@ public class Hangman {
 				}
 			}
 			if (wronglet == 6) {
-				i = (correct.length() + 4);
+				i = correct.length() + 4;
 				System.out.println("You Lose :(");
 			}
 
 			if (temp.toString().equals(correct)) {
-				i = (correct.length() + 4);
+				i = correct.length() + 4;
 				System.out.println("You Win :)");
 			}
 			System.out.println(temp);
@@ -71,6 +72,7 @@ public class Hangman {
 	 * function.
 	 * 
 	 * @param args
+	 *            the main args
 	 */
 
 	public static void main(String[] args) {
