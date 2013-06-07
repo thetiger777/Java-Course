@@ -7,6 +7,7 @@ package com.sirma.itt.javacourse.intro;
  * @author Vasko
  */
 public class Divisor {
+
 	/**
 	 * @param firstNum
 	 *            - the first number given.
