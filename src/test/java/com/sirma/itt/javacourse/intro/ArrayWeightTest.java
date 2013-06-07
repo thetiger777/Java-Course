@@ -4,8 +4,17 @@ import junit.framework.Assert;
 
 import org.junit.Test;
 
+/**
+ * Tests the class ArrayWeight that returns the weight of an array.
+ * 
+ * @author Vasko
+ */
 public class ArrayWeightTest {
 
+	/**
+	 * Gives an array to the tested method and compares the real weight with the
+	 * one received from the tested method.
+	 */
 	@Test
 	public void testWeightCenter() {
 		int center;
