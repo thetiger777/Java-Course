@@ -40,7 +40,6 @@ public class ArraySort {
 	}
 
 	public void sort(int[] arr) {
-		System.out.println("Original array:");
 		int i = 0;
 		int k = 0;
 		for (i = 0; i < arr.length; i++) {
@@ -48,11 +47,6 @@ public class ArraySort {
 			k = i;
 		}
 		quickSort(arr, 0, k);
-		System.out.println("");
-		System.out.println("Quicksorted array:");
-		for (i = 0; i < arr.length; i++) {
-			System.out.printf(" " + arr[i]);
-		}
 
 	}
 }
