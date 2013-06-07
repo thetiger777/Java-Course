@@ -3,8 +3,16 @@ package com.sirma.itt.javacourse.intro;
 import org.junit.Assert;
 import org.junit.Test;
 
+/**
+ * Tests the quickSort class.
+ * 
+ * @author Vasko
+ */
 public class ArraySortTest {
-
+	/**
+	 * Passes an array to be sorted, and then compares it to the real sorted
+	 * array.
+	 */
 	@Test
 	public void testDisplay() {
 
