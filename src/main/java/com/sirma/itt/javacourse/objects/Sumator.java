@@ -1,47 +1,79 @@
 package com.sirma.itt.javacourse.objects;
 
+import java.math.BigInteger;
+
+/**
+ * The class sums 'a' and 'b' of different types, the method used is sum.
+ * 
+ * @author Vasko
+ */
 public class Sumator {
+	/*
+	 * Sums integers
+	 */
 
-	static class IntSumator extends Sumator {
+	class IntSumator extends Sumator {
 
-		public static int sum(int a, int b) {
+		public int sum(int a, int b) {
 			return a + b;
 		}
-
 	}
 
-	static class FlPointSumator extends Sumator {
+	/*
+	 * Sums floats
+	 */
 
-		public static double sum(double a, double b) {
+	class FlPointSumator extends Sumator {
+
+		public double sum(double a, double b) {
 			return a + b;
 		}
-
 	}
 
-	static class StringSumator extends Sumator {
+	/*
+	 * Adds a String to another String.
+	 */
+	class StringSumator extends Sumator {
 
 		public String sum(String a, String b) {
-			String s = a + b;
-			return s;
+			return a + b;
 		}
 	}
 
-	static class BigIntSumator extends Sumator {
+	/*
+	 * Sums two BigIntegers. As they are immutable, a new variable is used.
+	 */
+	class BigIntSumator extends Sumator {
+		private BigInteger a;
+		private BigInteger b;
 
-		// public BigInteger sum(BigInteger bigInt1, BigInteger bigInt2) {
-		// return bigInt1 + bigInt2;
-		// }
+		public BigInteger sum(BigInteger a, BigInteger b) {
+			BigInteger sum = new BigInteger("0");
+			sum = sum.add(a);
+			sum = sum.add(b);
+			return sum;
+		}
 	}
 
 	/**
+	 * The main test class
+	 * 
 	 * @param args
 	 */
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
-		StringSumator a = new StringSumator();
-		System.out.println("Strings: " + a.sum("2", "5"));
-		System.out.println("Integers: " + IntSumator.sum(2, 5));
-		System.out.println("Floats: " + FlPointSumator.sum(2.01, 3.44));
-		// BigInteger("asd", 10);
+		Sumator Summer = new Sumator();
+		StringSumator sumStr = Summer.new StringSumator();
+		FlPointSumator sumFl = Summer.new FlPointSumator();
+		IntSumator sumInt = Summer.new IntSumator();
+		BigIntSumator sumBig = Summer.new BigIntSumator();
+
+		System.out.println("Strings: " + sumStr.sum("2", "5"));
+		System.out.println("Integers: " + sumInt.sum(2, 5));
+		System.out.println("Floats: " + sumFl.sum(2.01, 3.44));
+		BigInteger a = new BigInteger("2222222222222222222222222");
+		BigInteger b = new BigInteger(
+				"22222222222222222222222222222222222222222222222222222222222222222");
+		System.out.println("BigIntegers: " + sumBig.sum(a, b));
 	}
 }
