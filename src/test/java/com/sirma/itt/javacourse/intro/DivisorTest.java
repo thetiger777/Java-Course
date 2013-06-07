@@ -4,26 +4,36 @@ import junit.framework.Assert;
 
 import org.junit.Test;
 
+/**
+ * Tests the class that returns the biggest common divisor and littlest common
+ * multiple.
+ * 
+ * @author Vasko
+ */
 public class DivisorTest {
 
+	/**
+	 * Tests the method that returns the biggest common divisor.
+	 */
 	@Test
 	public void testBiggestDivisor() {
-		Divisor tester = new Divisor();
-		int NOD;
 		int numberOne = 7;
 		int numberTwo = 77;
-		NOD = tester.biggestDivisor(numberOne, numberTwo);
-		Assert.assertEquals(7, NOD);
+		Assert.assertEquals(7, Divisor.biggestDivisor(numberOne, numberTwo));
 	}
 
+	/**
+	 * Tests the method that returns the littlest common multiple, using the
+	 * biggest common divisor.
+	 */
 	@Test
 	public void testLittleDivisor() {
-		Divisor tester = new Divisor();
-		int NOK, NOD;
+		int litComMulti;
+		int bigComDiv;
 		int numberOne = 7;
 		int numberTwo = 77;
-		NOD = tester.biggestDivisor(numberOne, numberTwo);
-		NOK = tester.littleDivisor(numberOne, numberTwo, NOD);
-		Assert.assertEquals(77, NOK);
+		bigComDiv = Divisor.biggestDivisor(numberOne, numberTwo);
+		litComMulti = Divisor.littleDivisor(numberOne, numberTwo, bigComDiv);
+		Assert.assertEquals(77, litComMulti);
 	}
 }
